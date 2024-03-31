@@ -7,7 +7,7 @@ config()
 const app = express();
 const pool = new pg.Pool({
     connectionString: process.env.DATABASE_URL,
-    ssl: true
+    //ssl: true
 })
 
 const port = 3000 || process.env.PORT;
